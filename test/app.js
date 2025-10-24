@@ -1,1 +1,3 @@
-console.log(1 < 2 < 3);
+function hornDrill(theirHp) {
+    Math.random(1, 101)
+}
