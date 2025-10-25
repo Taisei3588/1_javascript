@@ -27,3 +27,34 @@ pikachu.levelUp();
 console.log('2nd pika', pikachu.level, pikachu.skills);
 pikachu.levelUp();
 console.log('3rd pika', pikachu.level, pikachu.skills);
+
+console.log('################################################')
+
+// ミューツー追加
+
+const mypokemons = ['ピカチュウ', 'ゼニガメ', 'ふしぎだね'];
+console.log(mypokemons);
+mypokemons.push('ミューツー')
+
+//配列のマージ
+
+const old_color = ['赤', '青', '緑'];
+const new_color = ['red', 'blue', 'green'];
+
+console.log(old_color.concat(new_color));
+
+//アペンドチャイルド
+
+const $time = document.createElement('article');
+$time.setAttribute('class', 'post');
+$time.innerHTML = 'Javascriptの練習';
+
+const $timeline = document.querySelector('#timeline');
+$timeline.appendChild($time);
+
+//button
+
+const $button = document.getElementById('button');
+$button.addEventListener('click', function () {
+    document.getElementById('output').innerHTML = '押されちゃった！'
+})
