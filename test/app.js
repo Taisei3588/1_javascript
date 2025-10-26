@@ -58,3 +58,15 @@ const $button = document.getElementById('button');
 $button.addEventListener('click', function () {
     document.getElementById('output').innerHTML = '押されちゃった！'
 })
+
+//ピカチュウゲット
+
+const $pika = document.querySelector('#chance_pika');
+
+$pika.addEventListener('click', function () {
+    if (Math.random() <= 0.2) {
+        alert('ぴかげっと');
+    } else {
+        alert('にげられた');
+    }
+})
